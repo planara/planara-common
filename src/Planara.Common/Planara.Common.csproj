@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Version>1.0.0</Version>
+        <Authors>a1unade</Authors>
+        <Company>Planara</Company>
+        <Copyright>Copyright © Planara</Copyright>
+        <Nullable>enable</Nullable>
+        <Description>Shared contracts and infrastructure primitives used across Planara backend services.</Description>
+        <PackageTags>planara;backend;common;shared;contracts</PackageTags>
+        <PackageId>Planara.Common</PackageId>
+        <RepositoryUrl>https://github.com/planara/planara-common</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/planara/planara-common</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+    </ItemGroup>
+
+</Project>
