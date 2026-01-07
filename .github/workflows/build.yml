@@ -38,4 +38,4 @@ jobs:
       #   run: dotnet test Planara.Common.sln --no-build -c Release
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4
