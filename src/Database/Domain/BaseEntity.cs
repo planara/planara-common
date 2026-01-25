@@ -8,7 +8,7 @@ public abstract class BaseEntity
     /// <summary>
     /// ID сущности
     /// </summary>
-    public Guid Id { get; set; } = new Guid();
+    public Guid Id { get; set; } = Guid.NewGuid();
     
     /// <summary>
     /// Дата создания сущности
