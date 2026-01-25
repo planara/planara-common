@@ -2,6 +2,16 @@
   "version": 1,
   "dependencies": {
     "net10.0": {
+      "AppAny.HotChocolate.FluentValidation": {
+        "type": "Direct",
+        "requested": "[0.12.0, )",
+        "resolved": "0.12.0",
+        "contentHash": "qansjoCJ+wcBnoyqdvxr6xuszgjAWWLzRQJtyBD53taTG3FwRtNbnJNQzsAsveiRe7hmbxlV6eFX7dZ3h5953g==",
+        "dependencies": {
+          "FluentValidation": "11.10.0",
+          "HotChocolate.Execution": "14.1.0"
+        }
+      },
       "FluentValidation": {
         "type": "Direct",
         "requested": "[12.1.1, )",
@@ -51,6 +61,16 @@
           "Microsoft.EntityFrameworkCore.Analyzers": "10.0.1",
           "Microsoft.Extensions.Caching.Memory": "10.0.1",
           "Microsoft.Extensions.Logging": "10.0.1"
+        }
+      },
+      "Microsoft.IdentityModel.Tokens": {
+        "type": "Direct",
+        "requested": "[8.15.0, )",
+        "resolved": "8.15.0",
+        "contentHash": "zUE9ysJXBtXlHHRtcRK3Sp8NzdCI1z/BRDTXJQ2TvBoI0ENRtnufYIep0O5TSCJRJGDwwuLTUx+l/bEYZUxpCA==",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.IdentityModel.Logging": "8.15.0"
         }
       },
       "Npgsql.EntityFrameworkCore.PostgreSQL": {
@@ -557,6 +577,19 @@
         "type": "Transitive",
         "resolved": "10.0.1",
         "contentHash": "DO8XrJkp5x4PddDuc/CH37yDBCs9BYN6ijlKyR3vMb55BP1Vwh90vOX8bNfnKxr5B2qEI3D8bvbY1fFbDveDHQ=="
+      },
+      "Microsoft.IdentityModel.Abstractions": {
+        "type": "Transitive",
+        "resolved": "8.15.0",
+        "contentHash": "e/DApa1GfxUqHSBHcpiQg8yaghKAvFVBQFcWh25jNoRobDZbduTUACY8bZ54eeGWXvimGmEDdF0zkS5Dq16XPQ=="
+      },
+      "Microsoft.IdentityModel.Logging": {
+        "type": "Transitive",
+        "resolved": "8.15.0",
+        "contentHash": "1gJLjhy0LV2RQMJ9NGzi5Tnb2l+c37o8D8Lrk2mrvmb6OQHZ7XJstd/XxvncXgBpad4x9CGXdipbZzJJCXKyAg==",
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "8.15.0"
+        }
       },
       "Npgsql": {
         "type": "Transitive",
