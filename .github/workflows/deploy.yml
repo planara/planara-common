@@ -40,7 +40,7 @@ jobs:
         run: dotnet build Planara.Common.sln -c Release --no-restore
 
       - name: Pack
-        run: dotnet pack src/Planara.Common/Planara.Common.csproj -c Release --no-build -o ./nupkg
+        run: dotnet pack src/Planara.Common.csproj -c Release --no-build -o ./nupkg
 
       - name: Push to NuGet.org
         env:
