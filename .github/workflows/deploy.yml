@@ -31,7 +31,7 @@ jobs:
           dotnet-version: '10.0.x'
           cache: true
           cache-dependency-path: |
-            src/Planara.Common/packages.lock.json
+            src/packages.lock.json
 
       - name: Restore
         run: dotnet restore Planara.Common.sln
