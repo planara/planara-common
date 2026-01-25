@@ -1,5 +1,6 @@
 using FluentValidation;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Planara.Common.Exceptions;
 
 namespace Planara.Common.GraphQL.Filters;
@@ -32,9 +33,38 @@ public sealed class ErrorFilter(ILogger<ErrorFilter> logger) : IErrorFilter
                     .SetExtension("validationErrors", validationErrors)
                     .Build();
             }
+            
+            case SecurityTokenExpiredException:
+                logger.LogWarning(ex, "Token expired: {Message}", error.Message);
+                return ErrorBuilder.FromError(error)
+                    .SetCode("TOKEN_EXPIRED")
+                    .SetMessage("Token expired")
+                    .Build();
+            
+            case SecurityTokenInvalidSignatureException:
+                logger.LogWarning(ex, "Invalid token signature: {Message}", error.Message);
+                return ErrorBuilder.FromError(error)
+                    .SetCode("TOKEN_INVALID_SIGNATURE")
+                    .SetMessage("Invalid token signature")
+                    .Build();
+
+            case SecurityTokenException:
+                logger.LogWarning(ex, "Invalid token: {Message}", error.Message);
+                return ErrorBuilder.FromError(error)
+                    .SetCode("TOKEN_INVALID")
+                    .SetMessage("Invalid token")
+                    .Build();
+            
+            case UnauthorizedAccessException:
+                logger.LogWarning(ex, "Unauthorized: {Message}", error.Message);
+                return ErrorBuilder
+                    .FromError(error)
+                    .SetCode("UNAUTHORIZED")
+                    .SetMessage("Unauthorized")
+                    .Build();
+            
             case BaseException bex when !string.IsNullOrWhiteSpace(bex.Code):
                 logger.LogError(ex, "GraphQL Error: {Message}", error.Message);
-            
                 return ErrorBuilder
                     .FromError(error)
                     .SetCode(bex.Code)
