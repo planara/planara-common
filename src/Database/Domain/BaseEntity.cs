@@ -8,12 +8,12 @@ public abstract class BaseEntity
     /// <summary>
     /// ID сущности
     /// </summary>
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = new Guid();
     
     /// <summary>
     /// Дата создания сущности
     /// </summary>
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     
     /// <summary>
     /// Дата обновления сущности
