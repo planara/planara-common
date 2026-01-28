@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Version>1.4.1</Version>
+        <Version>1.4.2</Version>
         <Authors>a1unade</Authors>
         <Company>Planara</Company>
         <Copyright>Copyright © Planara</Copyright>
@@ -30,6 +30,7 @@
       <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="15.1.12" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+      <PackageReference Include="Planara.Kafka" Version="1.1.0" />
       <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
       <PackageReference Include="Serilog.Sinks.Graylog" Version="3.1.1" />
     </ItemGroup>
