@@ -30,7 +30,7 @@
       <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="15.1.12" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
-      <PackageReference Include="Planara.Kafka" Version="1.1.0" />
+      <PackageReference Include="Planara.Kafka" Version="1.2.0" />
       <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
       <PackageReference Include="Serilog.Sinks.Graylog" Version="3.1.1" />
     </ItemGroup>
