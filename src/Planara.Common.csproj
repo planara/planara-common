@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Version>1.4.3</Version>
+        <Version>1.5.0</Version>
         <Authors>a1unade</Authors>
         <Company>Planara</Company>
         <Copyright>Copyright © Planara</Copyright>
@@ -28,6 +28,7 @@
       <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
       <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.12" />
       <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="15.1.12" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.2" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
       <PackageReference Include="Planara.Kafka" Version="1.2.0" />
