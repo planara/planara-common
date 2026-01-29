@@ -76,9 +76,9 @@
       },
       "Planara.Kafka": {
         "type": "Direct",
-        "requested": "[1.1.0, )",
-        "resolved": "1.1.0",
-        "contentHash": "lMZCWfMUQsM+sxHbqUZLYyWvxJEV3XFKy+iGLzqV8+qcoyGZncUp8bhOcZwqhxh9OXuCygvgKU2DSu06XlgpYQ==",
+        "requested": "[1.2.0, )",
+        "resolved": "1.2.0",
+        "contentHash": "wHlgr4qTqBwZm9SBeRP5xvesP9Y47jF+7vgsCs5bmKRiR6MliUFzTW5l7fFR6toOenonk7d4I/LunyQvO85p7Q==",
         "dependencies": {
           "Confluent.Kafka": "2.13.0",
           "Microsoft.Extensions.Configuration": "10.0.2",
