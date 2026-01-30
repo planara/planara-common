@@ -19,6 +19,10 @@ public static class JwtAuthExtension
             .ValidateOnStart();
         
         services
+            .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer();
+        
+        services
             .AddOptions<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme)
             .Configure<IOptions<JwtOptions>>((options, jwtOpt) =>
             {
