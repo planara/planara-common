@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Version>1.6.0</Version>
+        <Version>1.7.0</Version>
         <Authors>a1unade</Authors>
         <Company>Planara</Company>
         <Copyright>Copyright © Planara</Copyright>
@@ -28,6 +28,7 @@
       <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
       <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.12" />
       <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="15.1.12" />
+      <PackageReference Include="HotChocolate.Data" Version="15.1.12" />
       <PackageReference Include="HotChocolate.Fusion" Version="15.1.12" />
       <PackageReference Include="HotChocolate.Fusion.Composition" Version="15.1.12" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.2" />

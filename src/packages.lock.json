@@ -51,6 +51,20 @@
           "HotChocolate": "15.1.12"
         }
       },
+      "HotChocolate.Data": {
+        "type": "Direct",
+        "requested": "[15.1.12, )",
+        "resolved": "15.1.12",
+        "contentHash": "7X0mCZv5NytMAdJrE5MhywUiGIsuvwa7MXYiUiqA01aOM9ZOlUtcnA4LJNRlx4ZQfUhBDMCnpgl/SIYk50e/6w==",
+        "dependencies": {
+          "GreenDonut.Data": "15.1.12",
+          "GreenDonut.Data.Abstractions": "15.1.12",
+          "GreenDonut.Data.Primitives": "15.1.12",
+          "HotChocolate.Execution": "15.1.12",
+          "HotChocolate.Execution.Projections": "15.1.12",
+          "HotChocolate.Types.CursorPagination": "15.1.12"
+        }
+      },
       "HotChocolate.Fusion": {
         "type": "Direct",
         "requested": "[15.1.12, )",
