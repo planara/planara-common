@@ -5,4 +5,5 @@ public static class WellKnownSchema
     public const string Accounts = nameof(Accounts);
     public const string Auth = nameof(Auth);
     public const string Projects = nameof(Projects);
+    public const string Benchmarks = nameof(Benchmarks);
 }
