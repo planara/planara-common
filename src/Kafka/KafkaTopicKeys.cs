@@ -14,4 +14,9 @@ public static class KafkaTopicKeys
     /// Событие удаления пользователя
     /// </summary>
     public const string UserDeleted = "UserDeleted";
+    
+    /// <summary>
+    /// Событие отправки кода подтверждения на почту пользователя
+    /// </summary>
+    public const string EmailConfirmation = "EmailConfirmation";
 }
