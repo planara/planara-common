@@ -44,6 +44,11 @@ public static class ClaimsPrincipalExtensions
         throw new UnauthorizedAccessException("Invalid role claim.");
     }
 
-    public static bool HasRole(this ClaimsPrincipal user, RoleType role)
-        => user.IsInRole(role.ToString());
+    public static bool HasRole(this ClaimsPrincipal user, RoleType role) => user.IsInRole(role.ToString());
+    
+    public static bool IsAccessToken(this ClaimsPrincipal claims) =>
+        claims.FindFirst(ClaimTypes.TokenUse)?.Value == TokenUses.Access;
+
+    public static bool IsRegistrationToken(this ClaimsPrincipal claims) =>
+        claims.FindFirst(ClaimTypes.TokenUse)?.Value == TokenUses.Registration;
 }
