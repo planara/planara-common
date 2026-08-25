@@ -11,4 +11,9 @@ public static class ClaimTypes
     /// Роль пользователя
     /// </summary>
     public const string Role = System.Security.Claims.ClaimTypes.Role;
+
+    /// <summary>
+    /// Назначение JWT
+    /// </summary>
+    public const string TokenUse = "tokenUse";
 }
