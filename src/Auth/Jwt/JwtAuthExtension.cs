@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Planara.Common.Auth.Claims;
 
 namespace Planara.Common.Auth.Jwt;
 
@@ -41,6 +42,19 @@ public static class JwtAuthExtension
 
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.FromSeconds(30)
+                };
+                
+                options.Events = new JwtBearerEvents
+                {
+                    OnTokenValidated = context =>
+                    {
+                        var tokenUse = context.Principal?.FindFirst(ClaimTypes.TokenUse)?.Value;
+
+                        if (tokenUse == TokenUses.Registration)
+                            context.Fail("Registration token cannot be used as an access token.");
+
+                        return Task.CompletedTask;
+                    }
                 };
             });
         
