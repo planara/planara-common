@@ -8,10 +8,20 @@ public class UserCreatedMessage
     /// <summary>
     /// ID пользователя
     /// </summary>
-    public Guid UserId { get; set; }
+    public required Guid UserId { get; set; }
     
     /// <summary>
     /// Адрес электронной почты
     /// </summary>
     public required string Email { get; set; }
+    
+    /// <summary>
+    /// Имя пользователя
+    /// </summary>
+    public string? Name { get; set; }
+    
+    /// <summary>
+    /// Пароль пользователя
+    /// </summary>
+    public string? Surname { get; set; }
 }
