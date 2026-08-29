@@ -1,4 +1,4 @@
-namespace Planara.Common.Kafka;
+namespace Planara.Common.Kafka.Messages.Notifications;
 
 /// <summary>
 /// Сообщение с кодом подтверждения почты
