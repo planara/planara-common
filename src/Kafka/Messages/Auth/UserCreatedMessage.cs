@@ -1,4 +1,4 @@
-namespace Planara.Common.Kafka;
+namespace Planara.Common.Kafka.Messages.Auth;
 
 /// <summary>
 /// Сообщение о создании нового пользователя (топик auth)
