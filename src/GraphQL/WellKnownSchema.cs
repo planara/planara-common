@@ -7,4 +7,5 @@ public static class WellKnownSchema
     public const string Projects = nameof(Projects);
     public const string Benchmarks = nameof(Benchmarks);
     public const string Notifications = nameof(Notifications);
+    public const string Privacy = nameof(Privacy);
 }
