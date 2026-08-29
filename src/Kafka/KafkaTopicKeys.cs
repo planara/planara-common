@@ -19,4 +19,19 @@ public static class KafkaTopicKeys
     /// Событие отправки кода подтверждения на почту пользователя
     /// </summary>
     public const string EmailConfirmation = "EmailConfirmation";
+    
+    /// <summary>
+    /// Событие отправки запроса на добавление согласия пользователя
+    /// </summary>
+    public const string ConsentGrantRequested = "ConsentGrantRequested";
+    
+    /// <summary>
+    /// Событие выдачи согласия пользователя
+    /// </summary>
+    public const string ConsentGranted = "ConsentGranted";
+    
+    /// <summary>
+    /// Событие отзыва согласия пользователя
+    /// </summary>
+    public const string ConsentRevoked = "ConsentRevoked";
 }
