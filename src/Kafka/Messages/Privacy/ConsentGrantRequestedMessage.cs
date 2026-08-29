@@ -36,6 +36,11 @@ public class ConsentGrantRequestedMessage
     /// Время фактической подачи согласия пользователем
     /// </summary>
     public DateTime GivenAt { get; init; }
+    
+    /// <summary>
+    /// Время истечения временного согласия
+    /// </summary>
+    public DateTime? ExpiresAt { get; init; }
 
     /// <summary>
     /// IP-адрес клиента в момент подачи согласия
