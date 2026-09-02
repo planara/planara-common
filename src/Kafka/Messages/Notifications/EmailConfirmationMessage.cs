@@ -6,6 +6,11 @@ namespace Planara.Common.Kafka.Messages.Notifications;
 public class EmailConfirmationMessage
 {
     /// <summary>
+    /// ID сообщения
+    /// </summary>
+    public required Guid Id { get; set; }
+    
+    /// <summary>
     /// Почта пользователя
     /// </summary>
     public required string Email { get; set; }
